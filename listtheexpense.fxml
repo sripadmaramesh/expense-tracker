@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d6bb63;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trackerexpense.listcontroller">
+   <children>
+      <TableView fx:id="tableView" layoutX="25.0" layoutY="30.0" onSort="#showAllTables" prefHeight="301.0" prefWidth="550.0">
+         <columns>
+            <TableColumn text="Tables" />
+         </columns>
+      </TableView>
+      <Button layoutX="503.0" layoutY="346.0" mnemonicParsing="false" onAction="#backtohome" style="-fx-background-color: #7a6a35; -fx-text-fill: #f5f4f0;" text="Back ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

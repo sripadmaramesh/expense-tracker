@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trackerexpense.HelloController">
+   <children>
+      <SplitPane dividerPositions="0.3295454545454545" layoutX="42.0" layoutY="64.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #474336;">
+              <children>
+                  <ImageView fitHeight="425.0" fitWidth="816.0" layoutX="-149.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url('https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/newscms/2018_12/1956916/170406-spring-savings-mn-1435.jpg');" />
+              </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #f7dd99;">
+               <children>
+                  <Button layoutX="122.0" layoutY="122.0" mnemonicParsing="false" onAction="#gotoaddpage" style="-fx-background-color: #b38809; -fx-text-alignment: center; -fx-text-fill: #f7f5f0;" text="Add expenses with month" />
+                  <Button layoutX="121.0" layoutY="172.0" mnemonicParsing="false" onAction="#gotosetbudget" prefHeight="26.0" prefWidth="154.0" style="-fx-background-color: #b38809; -fx-text-alignment: center; -fx-text-fill: #f7f5f0;" text="set budget" />
+                  <Button layoutX="122.0" layoutY="222.0" mnemonicParsing="false" onAction="#gotoexpense" prefHeight="26.0" prefWidth="154.0" style="-fx-background-color: #b38809; -fx-text-fill: #f7f5f0; -fx-text-alignment: center;" text="List all expenses" />
+                  <Text fill="#0b0969" layoutX="110.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="EXPENSE TRACKER">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
